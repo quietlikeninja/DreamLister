@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		434FE9851E6D5AE100A06E49 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434FE9841E6D5AE000A06E49 /* ItemCell.swift */; };
 		43E44EE31E65A74E00F9F699 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E44EE21E65A74E00F9F699 /* AppDelegate.swift */; };
 		43E44EE51E65A74E00F9F699 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43E44EE41E65A74E00F9F699 /* MainVC.swift */; };
 		43E44EE81E65A74E00F9F699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43E44EE61E65A74E00F9F699 /* Main.storyboard */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		434FE9841E6D5AE000A06E49 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		43E44EDF1E65A74E00F9F699 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43E44EE21E65A74E00F9F699 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43E44EE41E65A74E00F9F699 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				43E44F0B1E65B37700F9F699 /* MaterialView.swift */,
+				434FE9841E6D5AE000A06E49 /* ItemCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434FE9851E6D5AE100A06E49 /* ItemCell.swift in Sources */,
 				43E44EE51E65A74E00F9F699 /* MainVC.swift in Sources */,
 				43E44F011E65AC6800F9F699 /* Store+CoreDataClass.swift in Sources */,
 				43E44F051E65AC6800F9F699 /* ItemType+CoreDataClass.swift in Sources */,
@@ -366,6 +370,7 @@
 				43E44EF61E65A74E00F9F699 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
