@@ -104,6 +104,9 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="EdM-Os-Gfp" secondAttribute="trailing" id="fPY-Wc-Al3"/>
                                                 <constraint firstItem="EdM-Os-Gfp" firstAttribute="top" secondItem="jRY-CD-vPN" secondAttribute="topMargin" id="oGi-tC-CAz"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="details" destination="KBW-g9-0xY" id="oVM-Ox-uNz"/>
@@ -172,6 +175,9 @@
                                     <constraint firstAttribute="height" constant="100" id="269-7E-Xjf"/>
                                     <constraint firstAttribute="width" constant="100" id="4OE-Al-Ag1"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="842-Is-Xim" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
@@ -182,6 +188,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vIQ-Xo-ifI" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="132" width="235" height="40"/>
@@ -192,6 +201,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Details" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-vQ-Wic" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="16" y="182" width="343" height="60"/>
@@ -202,12 +214,18 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yR0-xc-xA4">
                                 <rect key="frame" x="0.0" y="383" width="375" height="216"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="U7e-NK-cvG"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2K-Bv-m87">
                                 <rect key="frame" x="16" y="607" width="343" height="40"/>
@@ -219,6 +237,9 @@
                                 <state key="normal" title="Save Item">
                                     <color key="titleColor" red="0.84720019040000005" green="0.84720019040000005" blue="0.84720019040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Store" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RS2-2M-ujt">
                                 <rect key="frame" x="134" y="335" width="108.5" height="40"/>
@@ -228,6 +249,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -254,12 +278,21 @@
                             <constraint firstItem="Wp4-vQ-Wic" firstAttribute="leading" secondItem="9SD-Ua-YQP" secondAttribute="leadingMargin" id="vGl-hM-67c"/>
                             <constraint firstItem="5B9-BF-D2C" firstAttribute="top" secondItem="h2K-Bv-m87" secondAttribute="bottom" constant="20" id="y3u-Fq-EIy"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <navigationItem key="navigationItem" title="Add/Edit" id="aey-Cj-csX">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="ZKi-AZ-QYO">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="detailsField" destination="Wp4-vQ-Wic" id="clW-F5-MC6"/>
+                        <outlet property="priceField" destination="vIQ-Xo-ifI" id="ybi-V1-yWc"/>
+                        <outlet property="storePicker" destination="yR0-xc-xA4" id="zDC-uv-838"/>
+                        <outlet property="titleField" destination="842-Is-Xim" id="qeG-Aw-kQ8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gf-Xi-rAH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
