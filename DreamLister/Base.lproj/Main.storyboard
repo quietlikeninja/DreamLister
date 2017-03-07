@@ -162,13 +162,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="tHb-lc-em4">
-                                <rect key="frame" x="16" y="74" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="dVA-el-vbp"/>
-                                    <constraint firstAttribute="width" constant="100" id="n7U-oM-W0u"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEK-OJ-Nom">
                                 <rect key="frame" x="16" y="74" width="100" height="100"/>
                                 <constraints>
@@ -178,7 +171,17 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addImage:" destination="uJQ-bf-2mW" eventType="touchUpInside" id="yC5-qz-zah"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="tHb-lc-em4">
+                                <rect key="frame" x="16" y="74" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="dVA-el-vbp"/>
+                                    <constraint firstAttribute="width" constant="100" id="n7U-oM-W0u"/>
+                                </constraints>
+                            </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="842-Is-Xim" customClass="CustomTextField" customModule="DreamLister" customModuleProvider="target">
                                 <rect key="frame" x="124" y="82" width="235" height="40"/>
                                 <color key="backgroundColor" red="0.84720019040000005" green="0.84720019040000005" blue="0.84720019040000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,12 +291,16 @@
                     <navigationItem key="navigationItem" title="Add/Edit" id="aey-Cj-csX">
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="ZKi-AZ-QYO">
                             <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="deletePressed:" destination="uJQ-bf-2mW" id="tGG-E2-xHg"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="detailsField" destination="Wp4-vQ-Wic" id="clW-F5-MC6"/>
                         <outlet property="priceField" destination="vIQ-Xo-ifI" id="ybi-V1-yWc"/>
                         <outlet property="storePicker" destination="yR0-xc-xA4" id="zDC-uv-838"/>
+                        <outlet property="thumbImage" destination="tHb-lc-em4" id="AB6-eW-ugp"/>
                         <outlet property="titleField" destination="842-Is-Xim" id="qeG-Aw-kQ8"/>
                     </connections>
                 </viewController>
