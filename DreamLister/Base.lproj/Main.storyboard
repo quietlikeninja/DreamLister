@@ -28,10 +28,13 @@
                                     <constraint firstAttribute="height" constant="30" id="vw1-CY-B0g"/>
                                 </constraints>
                                 <segments>
-                                    <segment title="First"/>
-                                    <segment title="Second"/>
+                                    <segment title="Date"/>
+                                    <segment title="Price"/>
                                     <segment title="Title"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="y5f-uc-3tY"/>
+                                </connections>
                             </segmentedControl>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="150" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Ssf-uG-3I4">
                                 <rect key="frame" x="16" y="134" width="343" height="533"/>
@@ -163,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vEK-OJ-Nom">
-                                <rect key="frame" x="16" y="74" width="100" height="100"/>
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="269-7E-Xjf"/>
                                     <constraint firstAttribute="width" constant="100" id="4OE-Al-Ag1"/>
@@ -176,7 +179,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagePick" translatesAutoresizingMaskIntoConstraints="NO" id="tHb-lc-em4">
-                                <rect key="frame" x="16" y="74" width="100" height="100"/>
+                                <rect key="frame" x="16" y="72" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="dVA-el-vbp"/>
                                     <constraint firstAttribute="width" constant="100" id="n7U-oM-W0u"/>
@@ -276,7 +279,7 @@
                             <constraint firstItem="vEK-OJ-Nom" firstAttribute="centerX" secondItem="tHb-lc-em4" secondAttribute="centerX" id="fL8-gJ-sRU"/>
                             <constraint firstItem="Wp4-vQ-Wic" firstAttribute="trailing" secondItem="9SD-Ua-YQP" secondAttribute="trailingMargin" id="gIq-ut-cKv"/>
                             <constraint firstItem="vIQ-Xo-ifI" firstAttribute="leading" secondItem="vEK-OJ-Nom" secondAttribute="trailing" constant="8" id="hIw-mp-l4i"/>
-                            <constraint firstItem="tHb-lc-em4" firstAttribute="top" secondItem="nh5-Ku-DDD" secondAttribute="bottom" constant="10" id="mSd-2H-W4f"/>
+                            <constraint firstItem="tHb-lc-em4" firstAttribute="top" secondItem="nh5-Ku-DDD" secondAttribute="bottom" constant="8" id="mSd-2H-W4f"/>
                             <constraint firstItem="h2K-Bv-m87" firstAttribute="trailing" secondItem="9SD-Ua-YQP" secondAttribute="trailingMargin" id="reV-E8-i7r"/>
                             <constraint firstItem="yR0-xc-xA4" firstAttribute="leading" secondItem="9SD-Ua-YQP" secondAttribute="leading" id="t8u-Fu-JIn"/>
                             <constraint firstItem="yR0-xc-xA4" firstAttribute="top" secondItem="RS2-2M-ujt" secondAttribute="bottom" constant="8" id="unP-sy-Hgd"/>
